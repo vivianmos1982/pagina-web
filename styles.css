@@ -1,0 +1,525 @@
+/* Variables de color */
+:root {
+    --color-bg: #f7f3ec; /* Fondo claro */
+    --color-primary: #8b5e34; /* Café oscuro */
+    --color-secondary: #e2a76f; /* Café claro */
+    --color-accent: #d4a373; /* Tono cálido y terroso */
+    --color-text: #4b3621; /* Texto principal */
+    --color-light: #ffffff; /* Blanco */
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+}
+
+/* Encabezado principal */
+header {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    text-align: center;
+    padding: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.button {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
+    padding: 0.7rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--color-accent);
+}
+
+/* Secciones generales */
+section {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+section p {
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+}
+
+section .button {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Productos destacados en el menú */
+.productos ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.productos li {
+    background-color: var(--color-light);
+    border: 1px solid var(--color-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+/* Sección de Contacto */
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-buttons .button {
+    display: flex;
+    align-items: center;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para imágenes */
+.img-full {
+    width: 100%;
+    max-width: 800px;
+    margin: 1.5rem auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-small {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f3ec;
+    color: #4b3621;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: #8b5e34;
+    margin-bottom: 1rem;
+}
+
+header, footer {
+    background-color: #8b5e34;
+    color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+button, .button {
+    background-color: #e2a76f;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+button:hover, .button:hover {
+    background-color: #d4a373;
+}
+
+/* Estilos para la sección del menú */
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.menu-item {
+    background-color: #ffffff;
+    border: 1px solid #e2a76f;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+}
+
+.menu-img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    margin-bottom: 1rem;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.price {
+    font-size: 1.1rem;
+    color: #8b5e34;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f3ec;
+    color: #4b3621;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: #8b5e34;
+    margin-bottom: 1rem;
+}
+
+header, footer {
+    background-color: #8b5e34;
+    color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+button, .button {
+    background-color: #e2a76f;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+button:hover, .button:hover {
+    background-color: #d4a373;
+}
+
+/* Estilos para la Sección de Historia */
+#historia {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.historia-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.historia-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.historia-text {
+    text-align: left;
+    max-width: 600px;
+}
+
+.historia-text h2 {
+    color: #8b5e34;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.historia-text p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .historia-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .historia-img {
+        margin-right: 2rem;
+    }
+}
+
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f3ec;
+    color: #4b3621;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1, h2 {
+    color: #8b5e34;
+    margin-bottom: 1rem;
+}
+
+header, footer {
+    background-color: #8b5e34;
+    color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+button, .button {
+    background-color: #e2a76f;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+button:hover, .button:hover {
+    background-color: #d4a373;
+}
+
+/* Estilos para la Sección de Filosofía */
+#filosofia {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filosofia-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.filosofia-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filosofia-text {
+    text-align: left;
+    max-width: 600px;
+}
+
+.filosofia-text h2 {
+    color: #8b5e34;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.filosofia-text p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.filosofia-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.filosofia-text ul li {
+    margin: 0.5rem 0;
+}
+
+.filosofia-text ul li strong {
+    color: #8b5e34;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .filosofia-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .filosofia-img {
+        margin-left: 2rem;
+    }
+}
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f3ec;
+    color: #4b3621;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1, h2, h3 {
+    color: #8b5e34;
+}
+
+header, footer {
+    background-color: #8b5e34;
+    color: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.button {
+    background-color: #e2a76f;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #d4a373;
+}
+
+/* Sección de Contacto */
+#contacto {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.formulario-contacto, .info-contacto {
+    padding: 1.5rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.map-container {
+    margin-top: 1.5rem;
+}
+
+.map-container iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .contacto-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .formulario-contacto, .info-contacto {
+        flex: 1;
+        margin: 0 1rem;
+    }
+}
